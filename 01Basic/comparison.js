@@ -56,4 +56,23 @@
 
 
 
-WebGLShaderPrecisionFormat
+// Stack and Heap Memory Management
+// Primative Data Types
+// Stack Memory => Primative Type
+// Primitive type call by value it give copy of value
+// Heap Memory => Non-Primative Type
+// Non-Primitive type call by reference it give reference of value when we change value change in original memory 
+// let myNumber = 10;
+// let anotherNumber = myNumber;
+// anotherNumber = 15;
+// console.log(myNumber);
+// console.log(anotherNumber);
+
+// const obj = {
+//   MarvelHeros: ["Iron Man", "Captain America", "Thor", "Hulk", "Spider Man"],
+//   DcHeros: ["Superman", "Batman", "Wonder Woman", "Flash", "Green Lantern"]
+// }
+// const obj2 = obj;
+// obj2.DcHeros[0] = "Aquaman";
+// console.log(obj);
+// console.log(obj2);
