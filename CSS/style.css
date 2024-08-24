@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #fff;
+  background-color: aqua;
+  text-align: center;
+  padding: 20px;
+  text-decoration: doted;
+  border: solid 2px #000;
+  display: inline;
+}
+/* html {
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+} */
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-position: center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
