@@ -12,9 +12,12 @@ const myName = " Abdul Qadeer ";
 // console.log(myName.slice(0, 4));
 // console.log(myName.replace("Abdul", "A"));
 // console.log(myName.charAt(1));
-let a = myName.split("");
-for (let i = 0; i < a.length; i++) {
-  const b = a[i];
-  console.log(b);
-}
-// console.log(a);
+// let a = myName.split("");
+// for (let i = 0; i < a.length; i++) {
+//   const b = a[i];
+//   console.log(b);
+// }
+// // console.log(a);
+
+let c = Number(0.1 + 0.2);
+console.log(c.toFixed(1));
