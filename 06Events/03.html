@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Async</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Welcome to AQTECH</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
-</body>
-<Script>
-const sayDate = (str)=>{
+    <p id="time-display"></p>
+  </body>
+  <script>
+    let intervalId;
+    const timeDisplay = document.getElementById("time-display");
 
-  console.log(str,Date.now());
-  
-}
-const IntervalID = setInterval(sayDate,2000,"hi")
-// clearInterval(IntervalID);
-</Script>
+    document.querySelector("#start").addEventListener("click", () => {
+      const sayDate = (str) => {
+        const now = new Date();
+        console.log(now);
+
+        timeDisplay.textContent = `${str} - ${now.toLocaleString()}`;
+      };
+      intervalId = setInterval(sayDate, 2000, "Hi");
+    });
+
+    document.querySelector("#stop").addEventListener("click", () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null; // Clear reference to avoid memory leaks
+      }
+    });
+  </script>
 </html>
